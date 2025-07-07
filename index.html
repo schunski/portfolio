@@ -1,50 +1,202 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="" type="image/x-icon">
-        
-        <!--=============== REMIX ICONS ===============-->
-        
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="">
-
-        <title>Mini portfolio website - Bedimcode</title>
-    </head>
-    <body>
-        <!--=============== HEADER PROFILE ===============-->
-        <header class="profile container">
-            
-        </header>
-
-        <!--=============== MAIN ===============-->
-        <main class="main">
-            <section class="filters container">
-                <!--=============== FILTERS TABS ===============-->
-
-                <div class="filters__sections">
-                    <!--=============== PROJECTS ===============-->
-                    
-
-                    <!--=============== SKILLS ===============-->
-                    
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Portfolio - Júnior Schunski</title>
+</head>
+<body>
+    <header class="profile container">
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+        <div class="profile__container grid">
+            <div class="profile__data">
+                <div class="profile__border">
+                    <div class="profile__perfil">
+                        <img src="assets/img/perfil.jpeg" alt="Foto de perfil de Júnior Schunski">
+                    </div>
                 </div>
-            </section>
-        </main>
+                <h2 class="profile__name">Júnior Schunski</h2>
+                <h3 class="profile__education">Estudante de TSI - UTFPR</h3>
+                <ul class="profile__social">
+                    <li>
+                        <a href="https://www.instagram.com/junschu" target="_blank" class="profile__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/schunski" target="_blank" class="profile__social-link">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/schunski" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="profile__buttons">
+                <div class="profile__buttons-small">
+                    <a href="https://api.whatsapp.com/send?phone=5554997071150" target="_blank" class="button button__small button__gray">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <!--=============== FOOTER ===============-->
-        <footer class="footer container">
-            
-        </footer>
+    <main class="main">
+        <section class="filters container">
+            <ul class="filters__content">
+                <li>
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        Sobre Mim
+                    </button>
+                </li>
+                <li>
+                    <button class="filters__button" data-target="#skills">
+                        Linguagens
+                    </button>
+                </li>
+            </ul>
 
-        <!--=============== SCROLLREVEAL ===============-->
-        <script src=""></script>
+            <div class="projects__content grid filters__active" data-content id="projects">
+                <div class="container_grid">
+                    <div>
+                        <h3>Introdução</h3>
+                        <p>
+                            Meu nome é Júnior Schunski, mas meus amigos me chamam de Júni. Tenho 25 anos, trabalho como Suporte no iFood e sou um apaixonado por tecnologia, cursando Sistemas para Internet na UTFPR, em Toledo, Paraná. Este site é mais do que um portfólio: é um reflexo da minha jornada, um espaço onde compartilho minhas ideias, conquistas e sonhos. Sou movido pela curiosidade e pela vontade de transformar conceitos em realidade, seja através de linhas de código ou de projetos que contam uma história.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Mas afinal... Quem é Júnior de verdade?</h3>
+                        <p>
+                            Nascido em 27 de setembro de 1999, em Toledo, Paraná, cresci em uma cidade que me ensinou o valor da simplicidade e da resiliência. Desde jovem, enfrentei desafios com determinação, aprendendo a equilibrar responsabilidade com uma sede insaciável por conhecimento. Toledo foi meu lar por toda a vida, mas meu coração sempre olhou para o horizonte. Sonho em explorar o mundo, mergulhar em novas culturas e deixar minha marca em lugares que ainda não conheço. Cada passo que dou é guiado por essa visão de expansão e descoberta.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Interesses e personalidade</h3>
+                        <p>
+                            Minha paixão por programação e design é apenas a ponta do iceberg. Sou fascinado pela interseção entre tecnologia e criatividade, onde ideias ganham vida em interfaces intuitivas e sistemas eficientes. A música é meu refúgio: uma melodia pode me transportar, acalmar ou inspirar. Sou um perfeccionista — às vezes até demais —, mas vejo isso como um reflexo do meu compromisso com a excelência. Caseiro por natureza, encontro paz em momentos de introspecção, seja caminhando ao ar livre, treinando na academia ou mergulhando em livros que exploram autoconhecimento, tecnologia ou os mistérios do cosmos. O universo, aliás, é uma das minhas grandes fascinações: a ideia de que somos parte de algo tão vasto e inexplorado me motiva a buscar sempre mais.
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Sonhos e Objetivos</h3>
+                        <p>
+                            Meu maior sonho é deixar um legado. Quero conquistar o mundo — não com poder, mas com impacto. Desejo explorar novas culturas, aprender idiomas, conhecer pessoas e histórias que ampliem minha visão de vida. Mais do que isso, quero construir uma trajetória que honre as raízes dos meus pais, indo além do que eles puderam alcançar. Sou movido por ideias ousadas, pela paixão de criar e pela determinação de evoluir. Minha história está apenas começando, e cada projeto, cada linha de código, é um passo em direção a um futuro que pretendo escrever com coragem e propósito.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-        <!--=============== MAIN JS ===============-->
-        <script src=""></script>
-    </body>
+            <div class="skills__content grid" data-content id="skills">
+                <div class="skills__area">
+                    <h3 class="skills__title">Frontend</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__level">Intermediário</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__level">Intermediário</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Bootstrap</h3>
+                                    <span class="skills__level">Intermediário</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Git</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__area">
+                    <h3 class="skills__title">Backend</h3>
+                    <div class="skills__box">
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Python</h3>
+                                    <span class="skills__level">Intermediário</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">MySQL</h3>
+                                    <span class="skills__level">Avançado</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Firebase</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skills__group">
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">.NET</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <div>
+                                    <h3 class="skills__name">Node.js</h3>
+                                    <span class="skills__level">Básico</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer container">
+        <span class="footer__copy">
+            © Schunski. All rights reserved
+        </span>
+    </footer>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
 </html>
